@@ -45,7 +45,7 @@ struct Fifo {
             qfifo.pop_front();
         mtx.signal();
             to_up->signal();
-            //WRONG! delete to_up;
+        //Listing 3.22 from little book of semaphores is broken!
     }
 } fifo;
 
